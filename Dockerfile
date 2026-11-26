@@ -27,6 +27,6 @@ RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-av
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-EXPOSE 8080
+EXPOSE 7860
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
