@@ -3,7 +3,6 @@ services:
     name: triase-aduan-makassar
     runtime: docker
     plan: free
-    autoDeploy: true
     envVars:
       - key: APP_NAME
         value: TriasePublik Makassar
@@ -21,5 +20,3 @@ services:
         value: file
       - key: LOG_CHANNEL
         value: stderr
-      - key: APP_KEY
-        generateValue: true
